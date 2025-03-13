@@ -593,10 +593,13 @@ footer {
     align-items: center;
 }
 
-.about-image img {
+.about-intro .container .about-video video{
+    height: 100%;
+    width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
+
 
 .mission-vision {
     background-color: var(--color-gray-light);
@@ -1374,6 +1377,15 @@ input[type="number"] {
     .location .container,
     .giving-intro .container {
         grid-template-columns: 1fr;
+    }
+
+    .about-intro .container .about-video{
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro .container .about-video video{
+        height: 100%;
+        width: 100%;
     }
     
     .welcome-content,
