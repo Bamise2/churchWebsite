@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - The Supernatural Assembly</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">The Supernatural Assembly</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service Times</a></li>
+                    <li><a href="give.html">Give</a></li>
+                    <li><a href="messages.html" class="active">Messages</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Messages</h1>
+            <p>Watch and listen to our latest sermons and teachings</p>
+        </div>
+    </section>
+
+    <section class="messages-search">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="message-search" placeholder="Search messages...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="series-filter">Series</label>
+                    <select id="series-filter">
+                        <option value="all">All Series</option>
+                        <option value="supernatural-life">Supernatural Life</option>
+                        <option value="faith-works">Faith That Works</option>
+                        <option value="holy-spirit">The Holy Spirit Today</option>
+                        <option value="kingdom-principles">Kingdom Principles</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="speaker-filter">Speaker</label>
+                    <select id="speaker-filter">
+                        <option value="all">All Speakers</option>
+                        <option value="john-smith">Pastor Seyi Kolawole</option>
+                        <option value="sarah-johnson">Pastor Tara Kolawole</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="date-filter">Date</label>
+                    <select id="date-filter">
+                        <option value="all">All Dates</option>
+                        <option value="this-month">This Month</option>
+                        <option value="last-month">Last Month</option>
+                        <option value="this-year">This Year</option>
+                        <option value="last-year">Last Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-series">
+        <div class="container">
+            <h2>Featured Series</h2>
+            <div class="series-slider">
+                <div class="series-card">
+                    <div class="series-image">
+                        <img src="./images/mamaCover.jpg" alt="Supernatural Life Series">
+                        <div class="series-overlay">
+                            <span>6 Messages</span>
+                        </div>
+                    </div>
+                    <div class="series-details">
+                        <h3>Diligence</h3>
+                        <p>Discover the supernatural laws of increase and how diligence unlocks God's abundance in every area of your life.</p>
+                        <a href="#" class="btn btn-outline">View Series</a>
+                    </div>
+                </div>
+                <!-- <div class="series-card">
+                    <div class="series-image">
+                        <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Faith That Works Series">
+                        <div class="series-overlay">
+                            <span>4 Messages</span>
+                        </div>
+                    </div>
+                    <div class="series-details">
+                        <h3>Faith That Works</h3>
+                        <p>Learn how to activate your faith for real-life results.</p>
+                        <a href="#" class="btn btn-outline">View Series</a>
+                    </div>
+                </div> -->
+                <div class="series-card">
+                    <div class="series-image">
+                        <img src="./images/pscover4.jpg" alt="Supernatural laws of increase">
+                        <div class="series-overlay">
+                            <span>5 Messages</span>
+                        </div>
+                    </div>
+                    <div class="series-details">
+                        <h3>Supernatural Laws of Increase</h3>
+                        <p>Understanding how to increase and prosper in this kingdom</p>
+                        <a href="#" class="btn btn-outline">View Series</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="messages-grid">
+        <div class="container">
+            <h2>Recent Messages</h2>
+            <div class="messages-container">
+                <div class="message-item">
+                    <div class="message-thumbnail">
+                        <img src="./images/mamaCover.jpg" alt="Supernatural Laws of Increase">
+                        <div class="play-button" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="message-details">
+                        <span class="message-series">Diligence</span>
+                        <h3>understanding the Supernatural Law of Increase</h3>
+                        <p class="message-speaker">Pastor Tara Kolawole </p>
+                        <p class="message-date">February 2, 2025</p>
+                        <p class="message-excerpt">Learn what it means to be diligent in this kingdom related to prosperity</p>
+                        <div class="message-actions">
+                            <a href="#" class="btn-watch"><i class="fas fa-play-circle"></i> Watch</a>
+                            <a href="#" class="btn-listen"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-item">
+                    <div class="message-thumbnail">
+                        <img src="./images/mamaCover.jpg" alt="Supernatural Laws of Increase">
+                        <div class="play-button" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="message-details">
+                        <span class="message-series">Diligence Part 2</span>
+                        <h3>understanding the Supernatural Law of Increase</h3>
+                        <p class="message-speaker">Pastor Tara Kolawole</p>
+                        <p class="message-date">February 3, 2025</p>
+                        <p class="message-excerpt">Learn what it means to be diligent in this kingdom related to prosperity</p>
+                        <div class="message-actions">
+                            <a href="#" class="btn-watch"><i class="fas fa-play-circle"></i> Watch</a>
+                            <a href="#" class="btn-listen"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-item">
+                    <div class="message-thumbnail">
+                        <img src="./images//mamaCover.jpg" alt="Supernatural Laws of Increase">
+                        <div class="play-button" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="message-details">
+                        <span class="message-series">Diligence Part 3</span>
+                        <h3>understanding the Supernatural Law of Increase</h3>
+                        <p class="message-speaker">Pastor Tara Kolawole</p>
+                        <p class="message-date">February 3, 2025</p>
+                        <p class="message-excerpt">Learn what it means to be diligent in this kingdom related to prosperity.</p>
+                        <div class="message-actions">
+                            <a href="#" class="btn-watch"><i class="fas fa-play-circle"></i> Watch</a>
+                            <a href="#" class="btn-listen"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-item" >
+                    <div class="message-thumbnail">
+                        <img src="./images/pscover4.jpg" alt="Supernatural Laws of Increase">
+                        <div class="play-button" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="message-details">
+                        <span class="message-series">Spirituality Of Increase</span>
+                        <h3>understanding the Supernatural Law of Increase</h3>
+                        <p class="message-speaker">Pastor Seyi Kolawole</p>
+                        <p class="message-date">February 3, 2025</p>
+                        <p class="message-excerpt">Understand the Spiritualityof increase.</p>
+                        <div class="message-actions">
+                            <a href="#" class="btn-watch"><i class="fas fa-play-circle"></i> Watch</a>
+                            <a href="#" class="btn-listen"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-item" data-series="kingdom-principles" data-speaker="john-smith" data-date="2023-05-07">
+                    <div class="message-thumbnail">
+                        <img src="./images/pscover4.jpg" alt="Supernatural Laws of Increase">
+                        <div class="play-button" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="message-details">
+                        <span class="message-series">Why God Wants You To Increase</span>
+                        <h3>understanding the Supernatural Law of Increase</h3>
+                        <p class="message-speaker">Pastor Seyi Kolawole</p>
+                        <p class="message-date">February 4, 2025</p>
+                        <p class="message-excerpt">Discover through the scriptures why God wants you to increase</p>
+                        <div class="message-actions">
+                            <a href="#" class="btn-watch"><i class="fas fa-play-circle"></i> Watch</a>
+                            <a href="#" class="btn-listen"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-item">
+                    <div class="message-thumbnail">
+                        <img src="./images/pscover4.jpg" alt="Supernatural Laws of Increase">
+                        <div class="play-button" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="message-details">
+                        <span class="message-series">Why God Wants You To Increase Part 2</span>
+                        <h3>Faith in Action</h3>
+                        <p class="message-speaker">Pastor Seyi Kolawole</p>
+                        <p class="message-date">February 4, 2025</p>
+                        <p class="message-excerpt">Discover through the scriptures why God wants you to increase</p>
+                        <div class="message-actions">
+                            <a href="#" class="btn-watch"><i class="fas fa-play-circle"></i> Watch</a>
+                            <a href="#" class="btn-listen"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more">
+                <button id="load-more-btn" class="btn btn-secondary">Load More Messages</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="video-frame" width="100%" height="100%" src="/placeholder.svg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2>Never Miss a Message</h2>
+                <p>Subscribe to our podcast and receive new messages directly to your device.</p>
+                <div class="podcast-links">
+                    <a href="#" class="podcast-link"><i class="fab fa-apple"></i> Apple Podcasts</a>
+                    <a href="#" class="podcast-link"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="#" class="podcast-link"><i class="fab fa-google"></i> Google Podcasts</a>
+                    <a href="#" class="podcast-link"><i class="fas fa-rss"></i> RSS Feed</a>
+                </div>
+            </div>
+            <div class="email-subscribe">
+                <h3>Get Weekly Message Updates</h3>
+                <form id="subscribe-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>The Supernatural Assembly</h3>
+                    <p>"And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work." - 2 Corinthians 9:8</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Service Times</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Saka Agbaje, Aare Bodija Ibadan</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@supernaturalassembly.org</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 The Supernatural Assembly. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

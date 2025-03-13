@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give - The Supernatural Assembly</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">The Supernatural Assembly</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service Times</a></li>
+                    <li><a href="give.html" class="active">Give</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Give</h1>
+            <p>Support the vision and mission of The Supernatural Assembly</p>
+        </div>
+    </section>
+
+    <section class="giving-intro">
+        <div class="container">
+            <div class="giving-content">
+                <h2>Why We Give</h2>
+                <p>At The Supernatural Assembly, we believe that giving is an act of worship and an expression of our faith. When we give, we partner with God in His work and demonstrate our trust in His provision.</p>
+                <p>Our Bible verse, 2 Corinthians 9:8, reminds us: <em>" And God is able to make all grace abound toward you, that you, always having all sufficiency in all things, may have an abundance for every good work."</em></p>
+                <!-- <p>Your generous giving enables us to:</p>
+                <ul class="giving-impact">
+                    <li><i class="fas fa-church"></i> Maintain and improve our facilities</li>
+                    <li><i class="fas fa-hands-helping"></i> Support local outreach and community programs</li>
+                    <li><i class="fas fa-globe-americas"></i> Fund global missions and humanitarian efforts</li>
+                    <li><i class="fas fa-users"></i> Develop and expand our ministries</li>
+                    <li><i class="fas fa-microphone-alt"></i> Spread the Gospel through various media platforms</li>
+                </ul> -->
+            </div>
+            <!-- <div class="giving-image">
+                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Giving hands">
+            </div> -->
+        </div>
+    </section>
+
+    <section class="giving-options">
+        <div class="container">
+            <h2>Ways to Give</h2>
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>In Person</h3>
+                    <p>You can give during our Sunday services by placing your offering in the offering boxes located in the sanctuary.</p>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Online</h3>
+                    <p>Give securely online using your credit card or bank account through our secure giving platform.</p>
+                    <a href="#online-giving" class="btn btn-primary">Give Online</a>
+                </div>
+                <!-- <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Text to Give</h3>
+                    <p>Text "GIVE" to (123) 456-7890 followed by the amount you wish to give (e.g., "GIVE 50").</p>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Mail</h3>
+                    <p>You can mail your check or money order to:<br>The Supernatural Assembly<br>123 Faith Street<br>Cityville, State 12345</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="online-giving" class="online-giving">
+        <div class="container">
+            <h2>Online Giving</h2>
+            <div class="giving-form-container">
+                <form id="giving-form" class="giving-form">
+                    <div class="form-group">
+                        <label for="giving-amount">Amount</label>
+                        <!-- <div class="amount-options">
+                            <button type="button" class="amount-option" data-amount="25">$25</button>
+                            <button type="button" class="amount-option" data-amount="50">$50</button>
+                            <button type="button" class="amount-option" data-amount="100">$100</button>
+                            <button type="button" class="amount-option" data-amount="250">$250</button>
+                            <button type="button" class="amount-option" data-amount="500">$500</button>
+                            <button type="button" class="amount-option" data-amount="1000">$1000</button>
+                        </div> -->
+                        <div class="custom-amount">
+                            <span class="currency-symbol">₦</span>
+                            <input type="number" id="giving-amount" name="amount" placeholder="Amount" min="1" step="1">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="giving-fund">Fund</label>
+                        <select id="giving-fund" name="fund">
+                            <option value="tithe">Tithe</option>
+                            <option value="offering">Offering</option>
+                            <option value="missions">Legacy</option>
+                            <option value="building">Seed</option>
+                            <option value="outreach">Rent Project</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="giving-frequency">Frequency</label>
+                        <select id="giving-frequency" name="frequency">
+                            <option value="one-time">One Time</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="bi-weekly">Bi-Weekly</option>
+                            <option value="monthly">Monthly</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="giving-name">Name</label>
+                        <input type="text" id="giving-name" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="giving-email">Email</label>
+                        <input type="email" id="giving-email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="giving-card">Card Information</label>
+                        <div class="card-input">
+                            <input type="text" id="giving-card" name="card" placeholder="Card Number" required>
+                            <div class="card-details">
+                                <input type="text" id="giving-expiry" name="expiry" placeholder="MM/YY" required>
+                                <input type="text" id="giving-cvc" name="cvc" placeholder="CVC" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Give Now</button>
+                    </div>
+                    
+                    <div class="secure-notice">
+                        <i class="fas fa-lock"></i> Your transaction is secure. We use encryption to protect your personal information.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="planned-giving">
+        <div class="container">
+            <h2>Planned Giving</h2>
+            <p>In addition to regular giving, you can also support The Supernatural Assembly through planned giving options such as:</p>
+            <div class="planned-options">
+                <div class="planned-option">
+                    <h3>Estate Planning</h3>
+                    <p>Include The Supernatural Assembly in your will or trust to leave a lasting legacy.</p>
+                </div>
+                <div class="planned-option">
+                    <h3>Stock Donations</h3>
+                    <p>Donate appreciated stocks or securities for potential tax benefits.</p>
+                </div>
+                <div class="planned-option">
+                    <h3>Charitable Gift Annuities</h3>
+                    <p>Receive income for life while supporting our ministry.</p>
+                </div>
+            </div>
+            <p>For more information about planned giving options, please contact our finance office at (123) 456-7890 or email <a href="mailto:finance@supernaturalassembly.org">finance@supernaturalassembly.org</a>.</p>
+        </div>
+    </section> -->
+
+    <!-- <section class="giving-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my donation tax-deductible?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, The Supernatural Assembly is a 501(c)(3) non-profit organization, and all donations are tax-deductible to the extent allowed by law. You will receive a year-end giving statement for your tax records.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How is my donation used?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your donations support our church operations, ministries, outreach programs, missions, and facility maintenance. We are committed to financial transparency and stewardship.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I designate my giving to a specific ministry or fund?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can designate your giving to specific funds such as missions, building fund, community outreach, or youth ministry. Simply select the appropriate fund when giving online or note it on your check.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How secure is online giving?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our online giving platform uses industry-standard encryption and security protocols to protect your personal and financial information. We do not store your credit card information on our servers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Thank You for Your Generosity</h2>
+                <p>Your faithful giving makes a difference in our church and community. Together, we can fulfill the mission God has given us.</p>
+                <a href="#online-giving" class="btn btn-white">Give Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>The Supernatural Assembly</h3>
+                    <p>"And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work." - 2 Corinthians 9:8</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Service Times</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Saka Agbaje, Aare Bodija Ibadan</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@supernaturalassembly.org</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 The Supernatural Assembly. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
